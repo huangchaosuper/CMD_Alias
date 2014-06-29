@@ -1,7 +1,8 @@
 
 
-DOSKEY alias= notepad C:\Bin\Alias.bat
-DOSKEY aliasf= cd C:\Bin
+DOSKEY ali= notepad C:\Bin\Alias.bat
+DOSKEY alif= cd C:\Bin
+::DOSKEY res= exit ^& start cmd
 
 ::$T     Command separator.  Allows multiple commands in a macro.
 
@@ -22,7 +23,7 @@ DOSKEY gs=git status
 
 ::Template and Git files shortcuts
 
-DOSKEY temp06=XCOPY/SHE "C:\Users\Bane\Desktop\Dev\Templates\Template 1.06" ^& rmdir/s/q .git ^& git init ^& chdir ^| clip ^& start cmd ^& cd sass ^& sass -w --style expanded main.scss 
+DOSKEY temp06=XCOPY/SHE "C:\Users\Bane\Desktop\Dev\Templates\Template 1.06" ^& rmdir/s/q .git ^& git init ^& git add . ^& git commit -m test ^& chdir ^| clip ^& start cmd ^& cd sass ^& cls ^& sass -w --style expanded main.scss 
 
 ::Git shortcuts
 
@@ -36,7 +37,11 @@ DOSKEY gl=git log --oneline --all --graph --decorate
 :: Sass commands
 
 DOSKEY sw=cd sass ^& sass -w --style expanded main.scss
-DOSKEY swn=cd sass ^& start cmd ^& sass -w --style expanded main.scss 
+DOSKEY swn=cd sass ^& start cmd ^& sass -w --style expanded main.scss
+
+:: Sublime  commands
+
+DOSKEY subf=cd C:\Users\Bane\AppData\Roaming\Sublime Text 3
 
 ::Clears screen when loaded 
 cls
