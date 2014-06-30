@@ -31,6 +31,7 @@ DOSKEY gs=git status
 DOSKEY gp=git push
 DOSKEY ga= git add .
 DOSKEY gc= git commit
+DOSKEY gb= git branch
 DOSKEY gl=git log --oneline --all --graph --decorate
 
 
